@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press+Start+2P">
+    <link rel="icon" type="image/x-icon" href="images/profile-pic.ico">
+</head>
+
+<body>
+    <h1 class="tic">Tic Tac Toe</h1>
+    <button class="start">Start Game</button>
+    <div class="win" hidden>
+        <div class="message"> hello</div>
+        <button class="restart" onclick="replay();">Play Again</button>
+    </div>
+
+    <div class="hide" hidden>
+        <div>
+            <div class="inline p">
+                <h1>Player 1 : X</h1> <br>
+
+            </div>
+            <div class="inline p">
+                <h1>Player 2 : 0</h1> <br>
+            </div>
+        </div>
+
+        <div class="board">
+            <table align="center">
+                <tr>
+                    <td><button class="play a d"></button></td>
+                    <td><button class="play a"></button></td>
+                    <td><button class="play a e"></button></td>
+                </tr>
+                <tr>
+                    <td><button class="play b"></button></td>
+                    <td><button class="play b d e"></button></td>
+                    <td><button class="play b"></button></td>
+                </tr>
+                <tr>
+                    <td><button class="play c e"></button></td>
+                    <td><button class="play c"></button></td>
+                    <td><button class="play c d"></button></td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+    <footer>
+        Module by Manthan
+    </footer>
+
+
+    <script>
+        function replay() {
+            var audion = new Audio("sounds/blue1.mp3");
+            audion.play();
+            setTimeout(() => {
+                location.reload();
+            }, 500);
+            
+        }
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="game.js"></script>
+</body>
+
+</html>

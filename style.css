@@ -1,0 +1,48 @@
+
+body{
+    background-color: blueviolet;
+    text-align: center;
+}
+.tic{
+    font-size: 2rem;
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+}
+.start{
+    margin: 200px 0;
+    padding: 20px 30px;
+    font-size: 1.5rem;
+    background-color: green;
+}
+.inline{
+    display: inline-block;
+}
+
+.p{
+    margin: 0 50px 0 50px;
+    color: white;
+}
+.play{
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin-top: 3px;
+    background-color: yellow;
+    font-size: 30px;
+    font-family: 'Press Start 2P', cursive;
+}
+.message{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2rem;
+    color: aliceblue;
+}
+.restart{
+    margin-top: 20px;
+    padding: 20px 30px;
+    font-size: 1.5rem;
+    background-color: green;
+}
+footer{
+    margin-top: 100px;
+    font-family: 'Press Start 2P',cursive;
+}
